@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'salsa';
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+body{
+    background: black;
+    cursor: ;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/*Header Styling*/
+header{
+    z-index: 1000;
+}
+
+header .Header{
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0, 0.25);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding-bottom: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    transition: 0.3s ease background color;
+}
+
+header .Brand h1{
+    color: transparent;
+    font-size: 3rem;
+    padding-left: 0px;
+    border: 2px;
+    border-color: white;
+    text-transform: uppercase;
+    background: linear-gradient(50deg,white, #009dff, lightblue, #009dff, white);
+    background-size: 100%;
+    background-clip: text;
+    padding: 7px;
+    
+}
+
+header .Brand h1 span{
+    color: whitesmoke;
+}
+
+header .Header nav{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .Header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .Header nav ul a{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header .Header nav ul a:hover{
+    color: #009dff;
+    font-size: 1.57rem;
+}
+
+header .Header nav ul .CTA{
+    border: lightblue solid 0.2rem;
+    border-radius: 20px 0 20px 0;
+    padding: 7px ;
+    color: #009dff;
+    font-weight: bold;
+    display: inline;
+    margin-left: auto;
+}
+
+header .Header nav ul .CTA:hover{
+    color: white;
+    background-color: #009dff85;
+    border-color: white;
+    border-style: groove;
+}
+
+#Home{
+    background: url(/Hero-Img.png);
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+    padding-top: 70px;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+#Home::after{
+    content: '';
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#Home h1{
+    color: transparent;
+    font-size: 5rem;
+    font-weight: normal;
+    background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: holo 10s ease-in-out once;
+}
+
+#Home h1 span{
+    color: whitesmoke;
+}
+
+#Home .button .CTA{
+    display: inline-block;
+    border: 0.2rem solid whitesmoke;
+    font-size: 2.5rem ;
+    color: transparent;
+    background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 5px 15px 5px 10px;
+    margin-top: 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+#Home .button .CTA:hover{
+    color: white;
+    background: #009dff;
+    font-size: 2.55rem ;
+}
+
+#Home .button .CTA:active{
+    transform: scaleX(80%) scaleY(70%) scaleZ(50%);
+}
+
+#Academics{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    z-index: 1;
+    color: antiquewhite;
+}
+
+#Academics .Academic-Top{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#Academics .Academic-Top h1{
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+#Academics .Academic-Top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    align-items: center;
+}
+
+#Academics .Academic-Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#Academics .Academic-Item {
+    flex-basis: 20%; /* Adjust this to control item width */
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: burlywood;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 10px; /* Add margin to separate items */
+    opacity: 70%;
+}
+
+#Academics .Academic-Item:hover{
+    opacity: 100%;
+    font-size: larger;
+}
+
+#Academics .Academic-Item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #009dff 100%);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#Academics .Academic-Item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#Academics .Academic-Item p {
+    color: white;
+    text-align: left;
+}
+
+#Academics .Academic-Bottom .icon {
+    flex: 0 0 auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/*Glory Section*/
+#Glory .Glory {
+	flex-direction: row;
+	text-align: left;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#Glory .Glory-left {
+	width: 250px;
+	height: 360px;
+}
+#Glory .Glory-right {
+	width: 50%;
+}
+
+#Glory .Glory-right h1{
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#Glory .Glory-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+    color: #009dff;
+    text-transform: capitalize;
+}
+#Glory .Glory-right p {
+	margin-bottom: 20px;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+#Glory .Glory-right .cta {
+	color: whitesmoke;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+    border: solid 2px white;
+}
+
+#Glory .Glory-right .cta:hover {
+	color: whitesmoke;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2.1rem;
+    border: solid 2px white;
+    background-color: #009dff;
+}
+
+#Glory .Glory-right .cta:active{
+    transform: scaleX(80%) scaleY(70%) scaleZ(50%);
+}
+
+#Glory .Glory-left .Glory-image {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px double white;
+}
+#Glory .Glory-left .Glory-image::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid #009dff ;
+	z-index: -1;
+}
+/* End About Section */
+
+/*Legacy Section*/
+#image{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#image .image-top{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#image .image-top h1{
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+#image .image-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    color: whitesmoke;
+}
+
+@media(max-width: 480px) {
+    header .Header{
+        display: block;
+    }
+
+    header .Brand h1 {
+        font-size: 2.5rem;
+        border: double whitesmoke 3px;
+    }
+
+    header .Header nav ul a {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-top: 2px;
+    }
+
+    header .Header nav ul .CTA{
+        visibility: collapse;
+    }
+    
+    header .Header nav ul .CTA:hover{
+        visibility: collapse;
+    }
+
+    #Home h1 {
+        font-size: 4rem;
+    }
+
+    #Home .button .CTA {
+        font-size: 2.5rem;
+        color: #009dff;
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+        border-width: 0.4rem;
+    }
+/*
+
+/* Adjustments for Tablets */
+@media(max-width: 768px) {
+    #Academics .Academic-Bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Academics .Academic-Item {
+        flex-basis: 20%;
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    #Academics .Academic-Top h1 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    #Academics .Academic-Top p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media(max-width: 480px) {
+    #Academics .Academic-Item {
+        flex-basis: 20%;
+        padding: 15px;
+    }
+
+    #Academics .Academic-Top h1 {
+        font-size: 3rem;
+    }
+
+    #Academics .Academic-Top p {
+        font-size: 1rem;
+    }
+
+    #Academics .Academic-Bottom .icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    #Glory .Glory-right h1{
+        font-size: 3rem;
+    }
+
+    #Glory .Glory-right h2{
+        font-size: 1.5rem;
+    }
+
+    #Glory .cta{
+        visibility: hidden;
+    }
+}
