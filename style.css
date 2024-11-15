@@ -513,3 +513,21 @@ header .Header nav ul .CTA:hover{
         visibility: hidden;
     }
 }
+
+@media(max-width: 480px) {
+    #Glory .Glory {
+        flex-direction: column;
+        display: flex;
+    }
+    #Glory .Glory-right h1{
+        font-size: 3rem;
+    }
+
+    #Glory .Glory-right h2{
+        font-size: 1.5rem;
+    }
+
+    #Glory .cta{
+        visibility: hidden;
+    }
+}
