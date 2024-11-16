@@ -450,6 +450,10 @@ header .Header nav ul .CTA:hover{
         visibility: collapse;
     }
 
+    #Home .Home{
+	background: url(./BG.jpg);
+    }
+	
     #Home h1 {
         font-size: 4rem;
     }
