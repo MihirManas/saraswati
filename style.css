@@ -272,7 +272,7 @@ header .Header nav ul .CTA:hover{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #000000 0%, #009dff 100%);
+    background-image: linear-gradient(60deg, #000000 0%, #009dff 70%, #009dff 100%);
     opacity: 0.9;
     z-index: -1;
 }
