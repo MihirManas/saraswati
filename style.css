@@ -450,8 +450,19 @@ header .Header nav ul .CTA:hover{
         visibility: collapse;
     }
 
-    #Home .Home{
-	background: url(./BG.jpg);
+    #Home{
+        background: url(./BG.jpg);
+        background-size: cover;
+        background-position: top center;
+        z-index: 1;
+        padding-top: 70px;
+        align-items: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
     }
 	
     #Home h1 {
