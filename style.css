@@ -252,12 +252,12 @@ header .Header nav ul .CTA:hover{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color: #009dff;
     position: relative;
     z-index: 1;
     overflow: hidden;
     margin: 10px; /* Add margin to separate items */
-    opacity: 70%;
+    opacity: 75%;
 }
 
 #Academics .Academic-Item:hover{
