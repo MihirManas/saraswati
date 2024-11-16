@@ -258,15 +258,11 @@ header .Header nav ul .CTA:hover{
     overflow: hidden;
     margin: 10px; /* Add margin to separate items */
     opacity: 70%;
-    height: 8cm;
-    width: 6cm;
 }
 
 #Academics .Academic-Item:hover{
     opacity: 100%;
     font-size: larger;
-    height: 9cm;
-    width: 7cm;
 }
 
 #Academics .Academic-Item::after {
